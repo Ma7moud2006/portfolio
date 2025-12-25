@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud Hassan | SOC Analyst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme" data-lang="en">
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">Mah<span>moud</span></div>
+            
+            <ul class="nav-links">
+                <li><a href="#home" data-key="nav.home">Home</a></li>
+                <li><a href="#about" data-key="nav.about">About</a></li>
+                <li><a href="#skills" data-key="nav.skills">Skills</a></li>
+                <li><a href="#education" data-key="nav.education">Education</a></li>
+                <li><a href="#contact" data-key="nav.contact">Contact</a></li>
+            </ul>
+            
+            <!-- شريط وسائل التواصل -->
+            <div class="nav-social">
+                <a href="https://www.facebook.com/share/17tgWgHs3z/?mibextid=wwXIfr" target="_blank" class="nav-social-icon" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/ma7____cr7?igsh=bTZzNjc3dWozamE0&utm_source=qr" target="_blank" class="nav-social-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/201030552768" target="_blank" class="nav-social-icon" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            
+            <div class="nav-controls">
+                <!-- زر تبديل اللغة -->
+                <button class="lang-switch" id="langSwitch">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                </button>
+                
+                <!-- زر تبديل الثيم -->
+                <button class="theme-switch" id="themeSwitch">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <!-- زر القائمة المتنقلة -->
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h4 class="hero-subtitle" data-key="hero.greeting">Hello, I'm</h4>
+                <h1 class="hero-title">Mahmoud <span class="highlight">Hassan</span></h1>
+                <h2 class="hero-role" data-key="hero.role">SOC Analyst & Cybersecurity Student</h2>
+                <p class="hero-description" data-key="hero.description">
+                    Third-year Cybersecurity student specializing in information security and networks. 
+                    Strong background in threat analysis and SOC fundamentals with technical skills in Python and Linux. 
+                    Seeking an internship opportunity in cybersecurity.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-key="hero.contactBtn">Contact Me</a>
+                    <a href="#about" class="btn btn-secondary" data-key="hero.aboutBtn">Learn More</a>
+                </div>
+            </div>
+            
+                    <div class="hero-image">
+            <!-- هنا مكان الصورة الشخصية -->
+            <div class="image-frame">
+                <img src="images/mahmoud-photo.png" alt="Mahmoud Hassan" id="profile-image" class="profile-img">
+                <div class="image-overlay">
+                    <span>Mahmoud Hassan</span>
+                    <p data-key="hero.roleShort">SOC Analyst</p>
+                </div>
+            </div>
+            
+            <!-- قسم المعلومات الشخصية المتحركة -->
+            <div class="personal-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4 data-key="personal.name">Name</h4>
+                        <p>Mahmoud Hassan</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+        <div class="info-icon">
+            <i class="fas fa-birthday-cake"></i>
+        </div>
+        <div class="info-content">
+            <h4 data-key="personal.age">Age</h4>
+            <p id="age" class="counter">19</p>
+        </div>
+    </div>
+                
+                <div class="info-card">
+        <div class="info-icon">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="info-content">
+            <h4 data-key="personal.location">Location</h4>
+            <p>10th of Ramadan, Egypt</p>
+        </div>
+    </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4 data-key="personal.nationality">Nationality</h4>
+                        <p>Egyptian</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+        <div class="info-icon">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="info-content">
+            <h4 data-key="personal.education">Education</h4>
+            <p>Arab Open University (AOU)</p>
+        </div>
+    </div>
+                
+                <div class="info-card">
+        <div class="info-icon">
+            <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="info-content">
+            <h4 data-key="personal.birthDate">Birth Date</h4>
+            <p id="birthDate">January 1, 2006</p>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- قسم عني -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title" data-key="about.title">About <span data-key="about.titleSpan">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Mahmoud Hassan Mahmoud</h3>
+                    <p data-key="about.description1">
+                        Third-year Cybersecurity student with a strong passion for information security and networks. 
+                        Currently studying for SOC and threat analysis certifications.
+                    </p>
+                    <p data-key="about.description2">
+                        Possess solid knowledge in networking (CCNA), programming languages like Python and JavaScript, 
+                        Linux system administration, and web development fundamentals.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label" data-key="about.email">Email:</span>
+                            <span class="info-value">mahmoud48440@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label" data-key="about.phone">Phone:</span>
+                            <span class="info-value">01030552768</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label" data-key="about.specialization">Specialization:</span>
+                            <span class="info-value" data-key="about.specializationValue">Cybersecurity</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label" data-key="about.status">Status:</span>
+                            <span class="info-value" data-key="about.statusValue">University Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4 data-key="about.year">Third Year</h4>
+                        <p data-key="about.yearDesc">Academic Level</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4 data-key="about.cert">Certifications in Progress</h4>
+                        <p>CCNA & Security+</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4 data-key="about.techLevel">Technical Level</h4>
+                        <p data-key="about.techDesc">Intermediate - Advanced</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المهارات -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title" data-key="skills.title">My <span data-key="skills.titleSpan">Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-alt"></i> <span data-key="skills.cyber">Cybersecurity</span></h3>
+                    <div class="skill-item">
+                        <span data-key="skills.soc">SOC Operations</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span data-key="skills.threat">Threat Analysis</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span data-key="skills.security">Security Fundamentals</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-network-wired"></i> <span data-key="skills.networking">Networking</span></h3>
+                    <div class="skill-item">
+                        <span data-key="skills.ccna">CCNA Networking</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span data-key="skills.netSecurity">Network Security</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 82%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> <span data-key="skills.programming">Programming & Development</span></h3>
+                    <div class="skill-item">
+                        <span data-key="skills.python">Python Programming</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span data-key="skills.linux">Linux Administration</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>HTML5 & CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- قسم التعليم -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title" data-key="education.title">Education & Timeline</h2>
+            <div class="timeline">
+                <!-- ويب ديفلوبمنت (سنة أولى) -->
+                <div class="timeline-item left">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3 data-key="education.item1.title">Web Development</h3>
+                        <p class="timeline-place" data-key="education.item1.place">Self-Learning (1st Year)</p>
+                        <p data-key="education.item1.description">Mastered HTML, CSS, JavaScript & Python basics through hands-on projects.</p>
+                    </div>
+                </div>
+                
+                <!-- CCNA نتوركينج (سنة تانية) -->
+                <div class="timeline-item right">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3 data-key="education.item2.title">Networking Fundamentals</h3>
+                        <p class="timeline-place" data-key="education.item2.place">CCNA Studies (2nd Year)</p>
+                        <p data-key="education.item2.description">Studied network infrastructure, protocols, and CCNA certification concepts.</p>
+                    </div>
+                </div>
+                
+                <!-- SOC (سنة تالته) -->
+                <div class="timeline-item left">
+                    <div class="timeline-date">2025 - Present</div>
+                    <div class="timeline-content">
+                        <h3 data-key="education.item3.title">SOC Specialist Training</h3>
+                        <p class="timeline-place" data-key="education.item3.place">Cybersecurity Focus (3rd Year)</p>
+                        <p data-key="education.item3.description">Learning SOC operations, threat analysis, and security monitoring techniques.</p>
+                    </div>
+                </div>
+                
+                <!-- الجامعة -->
+                <div class="timeline-item right">
+                    <div class="timeline-date">Sep 2023 - Jun 2026</div>
+                    <div class="timeline-content">
+                        <h3 data-key="education.item4.title">Cybersecurity Student</h3>
+                        <p class="timeline-place" data-key="education.item4.place">Arab Open University (AOU)</p>
+                        <p data-key="education.item4.description">Third year B.Sc. student specializing in cybersecurity and information security.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" data-key="contact.title">Contact <span data-key="contact.titleSpan">Me</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-key="contact.email">Email</h4>
+                            <p>mahmoud48440@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-key="contact.phone">Phone</h4>
+                            <p>01030552768</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-key="contact.location">Location</h4>
+                            <p data-key="contact.locationValue">Egypt</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4 data-key="contact.education">Education</h4>
+                            <p data-key="contact.educationValue">Cybersecurity Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+                
+                <!-- قسم وسائل التواصل الاجتماعي -->
+                <div class="social-section">
+                    <h3 class="social-title" data-key="social.title">Connect with me</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/17tgWgHs3z/?mibextid=wwXIfr" target="_blank" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/ma7____cr7?igsh=bTZzNjc3dWozamE0&utm_source=qr" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://wa.me/201030552768" target="_blank" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Mah<span>moud</span> Hassan</div>
+                <p class="footer-text" data-key="footer.text">Cybersecurity Specialist & SOC Analyst</p>
+                <p class="footer-copyright" data-key="footer.copyright">© 2025 Mahmoud Hassan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
